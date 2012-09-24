@@ -1,0 +1,5 @@
+NET "clk" LOC = P55;
+NET "clk" TNM_NET = "clk";
+
+NET "led1" LOC = P47 | SLEW = QUIETIO | DRIVE = 8;
+NET "led2" LOC = P48 | SLEW = QUIETIO | DRIVE = 8;

@@ -1,0 +1,29 @@
+== Connection ==
+For power on the xc6slx9 chip we need 4 wires. one VCCINT, one VCCAUX, one VCCO_2 and one GND, the VCCO_1(P103) make JTAG more stable.
+Power:
+  VCCINT(P89)  -- 1.2v
+  VCCAUX(P90)  -- 3.3v
+  VCCO_2(P63)  -- 3.3v
+  VCCO_1(P103) -- 3.3v
+  GND(P91)     -- GND 
+
+JTAG:
+  Vref -- 3.3v
+  GND -- GND
+  TMS -- P107
+  TCK -- P109
+  TDO -- P106
+  TDI -- P110 
+
+== Components == 
+  * xc6slx9 FPGA chip
+  * AMS1117 1.2v
+  * AMS1117 3.3v  http://www.advanced-monolithic.com/pdf/ds1117.pdf
+  * 5x5 PCB       http://item.taobao.com/item.htm?id=4610037529
+  * QFP32-144pin/0.5mm PCB
+                  http://item.taobao.com/item.htm?id=5247894966
+  * 50V, 4.7uF capacitor
+  * 50V, 0.01uF capacitor
+  * 20M osc
+  * wires
+
