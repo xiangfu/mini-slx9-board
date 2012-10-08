@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Mon 23 Jul 2012 01:05:38 PM CST
+EESchema Schematic File Version 2  date Mon 08 Oct 2012 06:07:14 PM CST
 LIBS:device
 LIBS:transistors
 LIBS:linear
@@ -7,31 +7,7 @@ LIBS:74xx
 LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
-LIBS:special
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:xc6slx9-tqg144
-LIBS:con
-LIBS:pwr
-LIBS:switch
-LIBS:ti
-LIBS:mini-slx9-cache
+LIBS:xilinx-azonenberg
 EELAYER 25  0
 EELAYER END
 $Descr A3 16535 11693
