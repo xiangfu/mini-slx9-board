@@ -1,0 +1,191 @@
+EESchema Schematic File Version 2  date Fri 12 Oct 2012 12:56:30 PM CST
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:osc-azonenberg
+LIBS:power-azonenberg
+LIBS:xilinx-azonenberg
+LIBS:pwr
+EELAYER 43  0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "12 oct 2012"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L XC6SLX25-XFTG256 U2
+U 1 1 5077A0C7
+P 11850 8400
+F 0 "U2" H 11650 8800 60  0000 C CNN
+F 1 "XC6SLX25-XFTG256" H 11250 13450 60  0000 C CNN
+	1    11850 8400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 3V3 #PWR7
+U 1 1 5077A125
+P 12200 2250
+F 0 "#PWR7" H 12200 2350 40  0001 C CNN
+F 1 "3V3" H 12200 2375 40  0000 C CNN
+	1    12200 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1V2 #PWR8
+U 1 1 5077A145
+P 12900 2250
+F 0 "#PWR8" H 12900 2210 30  0001 C CNN
+F 1 "1V2" H 12900 2400 60  0000 C CNN
+	1    12900 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR3
+U 1 1 5077A154
+P 10150 14600
+F 0 "#PWR3" H 10150 14600 30  0001 C CNN
+F 1 "GND" H 10150 14530 30  0001 C CNN
+	1    10150 14600
+	1    0    0    -1  
+$EndComp
+$Comp
+L OSC U1
+U 1 1 5077A524
+P 8100 6400
+F 0 "U1" H 8100 6400 60  0000 C CNN
+F 1 "OSC" H 8100 6300 60  0000 C CNN
+	1    8100 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5077A533
+P 6650 6750
+F 0 "C1" H 6700 6850 50  0000 L CNN
+F 1 "0.01uf" H 6700 6650 50  0000 L CNN
+	1    6650 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 3V3 #PWR1
+U 1 1 5077A5BA
+P 6650 6350
+F 0 "#PWR1" H 6650 6450 40  0001 C CNN
+F 1 "3V3" H 6650 6475 40  0000 C CNN
+	1    6650 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 5077A5C9
+P 6650 7100
+F 0 "#PWR2" H 6650 7100 30  0001 C CNN
+F 1 "GND" H 6650 7030 30  0001 C CNN
+	1    6650 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 3V3 #PWR5
+U 1 1 5077A5D6
+P 11300 2250
+F 0 "#PWR5" H 11300 2350 40  0001 C CNN
+F 1 "3V3" H 11300 2375 40  0000 C CNN
+	1    11300 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 3V3 #PWR6
+U 1 1 5077A5DD
+P 11700 2250
+F 0 "#PWR6" H 11700 2350 40  0001 C CNN
+F 1 "3V3" H 11700 2375 40  0000 C CNN
+	1    11700 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 3V3 #PWR4
+U 1 1 5077A5E4
+P 10700 2250
+F 0 "#PWR4" H 10700 2350 40  0001 C CNN
+F 1 "3V3" H 10700 2375 40  0000 C CNN
+	1    10700 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 3V3 #PWR9
+U 1 1 5077A5F4
+P 13000 14600
+F 0 "#PWR9" H 13000 14700 40  0001 C CNN
+F 1 "3V3" H 13000 14725 40  0000 C CNN
+	1    13000 14600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12200 2500 12200 2250
+Wire Wire Line
+	12900 2500 12900 2250
+Wire Wire Line
+	10150 14300 10150 14600
+Wire Wire Line
+	9700 6400 8750 6400
+Wire Wire Line
+	7400 6400 7400 6500
+Wire Wire Line
+	7400 6500 6650 6500
+Wire Wire Line
+	6650 6350 6650 6550
+Wire Wire Line
+	6650 6950 6650 7100
+Wire Wire Line
+	6650 7000 7400 7000
+Wire Wire Line
+	7400 7000 7400 6600
+Connection ~ 6650 6500
+Connection ~ 6650 7000
+Connection ~ 6650 7000
+Wire Wire Line
+	11300 2500 11300 2250
+Wire Wire Line
+	11700 2500 11700 2250
+Wire Wire Line
+	10700 2500 10700 2250
+Wire Wire Line
+	12850 14300 12850 14600
+Wire Wire Line
+	12850 14600 13000 14600
+$EndSCHEMATC

@@ -1,0 +1,15 @@
+eeschema (2012-04-08 BZR 3494)-testing  >> Creation date: Fri 12 Oct 2012 12:57:00 PM CST
+
+#Cmp ( order = Reference )
+| C1         0.01uf      
+| U1         OSC         
+| U2         XC6SLX25-XFTG256
+#End Cmp
+
+#Cmp ( order = Value )
+| 0.01uf       C1        
+| OSC          U1        
+| XC6SLX25-XFTG256 U2        
+#End Cmp
+
+#End List

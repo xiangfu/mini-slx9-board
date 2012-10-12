@@ -1,0 +1,24 @@
+Cmp-Mod V01 Created by CvPcb (2012-04-08 BZR 3494)-testing date = Fri 12 Oct 2012 01:00:53 PM CST
+
+BeginCmp
+TimeStamp = /5077A533;
+Reference = C1;
+ValeurCmp = 0.01uf;
+IdModule  = SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /5077A524;
+Reference = U1;
+ValeurCmp = OSC;
+IdModule  = CRYSTAL_5x7MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /5077A0C7;
+Reference = U2;
+ValeurCmp = XC6SLX25-XFTG256;
+IdModule  = FTG256;
+EndCmp
+
+EndListe
