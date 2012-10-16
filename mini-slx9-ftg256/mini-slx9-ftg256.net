@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Fri 12 Oct 2012 12:56:55 PM CST
+# EESchema Netlist Version 1.1 created  Tue 16 Oct 2012 09:58:21 AM CST
 (
  ( /5077A0C7 $noname  U2 XC6SLX25-XFTG256 {Lib=XC6SLX25-XFTG256}
   (   A1 GND )
@@ -15,7 +15,7 @@
   (  A12 ? )
   (  A13 ? )
   (  A14 ? )
-  (  A15 ? )
+  (  A15 /TMS )
   (  A16 ? )
   (   B1 ? )
   (   B2 ? )
@@ -42,11 +42,11 @@
   (   C7 ? )
   (   C8 ? )
   (   C9 ? )
-  (  C10 N-000076 )
+  (  C10 N-000079 )
   (  C11 ? )
-  (  C12 ? )
+  (  C12 /TDI )
   (  C13 ? )
-  (  C14 ? )
+  (  C14 /TCK )
   (  C15 ? )
   (  C16 ? )
   (   D1 ? )
@@ -78,7 +78,7 @@
   (  E11 ? )
   (  E12 ? )
   (  E13 ? )
-  (  E14 ? )
+  (  E14 /TDO )
   (  E15 ? )
   (  E16 ? )
   (   F1 ? )
@@ -261,10 +261,22 @@
  ( /5077A524 $noname  U1 OSC {Lib=OSC}
   (    1 3V3 )
   (    2 GND )
-  (    3 N-000076 )
+  (    3 N-000079 )
   (    4 3V3 )
  )
  ( /5077A533 $noname  C1 0.01uf {Lib=C}
+  (    1 3V3 )
+  (    2 GND )
+ )
+ ( /507CB80E $noname  P1 CONN_6 {Lib=CONN_6}
+  (    1 /TMS )
+  (    2 /TCK )
+  (    3 /TDI )
+  (    4 /TDO )
+  (    5 ? )
+  (    6 1V2 )
+ )
+ ( /507CC12B $noname  P2 CONN_2 {Lib=CONN_2}
   (    1 3V3 )
   (    2 GND )
  )
@@ -282,21 +294,38 @@ $endlist
 $endfootprintlist
 }
 { Pin List by Nets
-Net 75 "3V3" "3V3"
- U1 1
- U2 D7
- U2 R8
- U2 N2
- U2 E5
- U2 R13
- U1 4
- C1 1
-Net 76 "" ""
+Net 79 "" ""
  U1 3
  U2 C10
-Net 77 "GND" "GND"
+Net 80 "/TDI" "TDI"
+ P1 3
+ U2 C12
+Net 81 "GND" "GND"
  U1 2
- C1 2
  U2 A1
+ P2 2
+ C1 2
+Net 82 "3V3" "3V3"
+ U1 4
+ U1 1
+ U2 R8
+ C1 1
+ U2 D7
+ U2 N2
+ U2 E5
+ P2 1
+ U2 R13
+Net 83 "1V2" "1V2"
+ U2 G7
+ P1 6
+Net 84 "/TDO" "TDO"
+ U2 E14
+ P1 4
+Net 85 "/TCK" "TCK"
+ U2 C14
+ P1 2
+Net 94 "/TMS" "TMS"
+ P1 1
+ U2 A15
 }
 #End
