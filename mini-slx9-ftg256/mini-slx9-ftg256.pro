@@ -1,6 +1,6 @@
-update=Fri 12 Oct 2012 12:59:53 PM CST
+update=Mon 22 Oct 2012 08:26:04 PM CST
 version=1
-last_client=cvpcb
+last_client=kicad
 [pcbnew]
 version=1
 PadDrlX=320
@@ -79,8 +79,6 @@ LibName57=xtal-2
 LibName58=xtal-4
 LibName59=smt_azonenberg
 LibDir=../../azonenberg-devboards-read-only/libs;../../kicad-libs/modules
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=../../azonenberg-devboards-read-only/libs;../../kicad-libs/components
@@ -132,3 +130,5 @@ version=1
 NetIExt=net
 [cvpcb/libraries]
 EquName1=devcms
+[general]
+version=1

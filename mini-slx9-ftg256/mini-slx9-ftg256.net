@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Tue 16 Oct 2012 09:58:21 AM CST
+# EESchema Netlist Version 1.1 created  Mon 22 Oct 2012 08:04:57 PM CST
 (
  ( /5077A0C7 $noname  U2 XC6SLX25-XFTG256 {Lib=XC6SLX25-XFTG256}
   (   A1 GND )
@@ -42,7 +42,7 @@
   (   C7 ? )
   (   C8 ? )
   (   C9 ? )
-  (  C10 N-000079 )
+  (  C10 N-000002 )
   (  C11 ? )
   (  C12 /TDI )
   (  C13 ? )
@@ -261,7 +261,7 @@
  ( /5077A524 $noname  U1 OSC {Lib=OSC}
   (    1 3V3 )
   (    2 GND )
-  (    3 N-000079 )
+  (    3 N-000002 )
   (    4 3V3 )
  )
  ( /5077A533 $noname  C1 0.01uf {Lib=C}
@@ -274,11 +274,62 @@
   (    3 /TDI )
   (    4 /TDO )
   (    5 ? )
-  (    6 1V2 )
+  (    6 ? )
  )
- ( /507CC12B $noname  P2 CONN_2 {Lib=CONN_2}
+ ( /5080AAEE $noname  U3 LDO1117-XX {Lib=LDO1117-XX}
+  (    1 GND )
+  (    2 3V3 )
+  (    3 5V )
+ )
+ ( /5080AB01 $noname  U4 LDO1117-XX {Lib=LDO1117-XX}
+  (    1 GND )
+  (    2 1V2 )
+  (    3 5V )
+ )
+ ( /5080AB09 $noname  C8 C {Lib=C}
   (    1 3V3 )
   (    2 GND )
+ )
+ ( /5080AB18 $noname  C9 C {Lib=C}
+  (    1 3V3 )
+  (    2 GND )
+ )
+ ( /5080AB25 $noname  C10 C {Lib=C}
+  (    1 3V3 )
+  (    2 GND )
+ )
+ ( /5080AB2B $noname  C11 C {Lib=C}
+  (    1 3V3 )
+  (    2 GND )
+ )
+ ( /5080AB49 $noname  C3 C {Lib=C}
+  (    1 1V2 )
+  (    2 GND )
+ )
+ ( /5080AB5B $noname  C7 C {Lib=C}
+  (    1 1V2 )
+  (    2 GND )
+ )
+ ( /5080AB61 $noname  C2 C {Lib=C}
+  (    1 3V3 )
+  (    2 GND )
+ )
+ ( /5080AB67 $noname  C4 C {Lib=C}
+  (    1 3V3 )
+  (    2 GND )
+ )
+ ( /5080AB6D $noname  C5 C {Lib=C}
+  (    1 3V3 )
+  (    2 GND )
+ )
+ ( /5080AB73 $noname  C6 C {Lib=C}
+  (    1 3V3 )
+  (    2 GND )
+ )
+ ( /50853D83 $noname  K1 CONN_3 {Lib=CONN_3}
+  (    1 5V )
+  (    2 GND )
+  (    3 ? )
  )
 )
 *
@@ -291,41 +342,117 @@ $component C1
  C?
  C1-1
 $endlist
+$component C8
+ SM*
+ C?
+ C1-1
+$endlist
+$component C9
+ SM*
+ C?
+ C1-1
+$endlist
+$component C10
+ SM*
+ C?
+ C1-1
+$endlist
+$component C11
+ SM*
+ C?
+ C1-1
+$endlist
+$component C3
+ SM*
+ C?
+ C1-1
+$endlist
+$component C7
+ SM*
+ C?
+ C1-1
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component C5
+ SM*
+ C?
+ C1-1
+$endlist
+$component C6
+ SM*
+ C?
+ C1-1
+$endlist
 $endfootprintlist
 }
 { Pin List by Nets
-Net 79 "" ""
- U1 3
- U2 C10
-Net 80 "/TDI" "TDI"
- P1 3
- U2 C12
-Net 81 "GND" "GND"
- U1 2
- U2 A1
- P2 2
- C1 2
-Net 82 "3V3" "3V3"
- U1 4
- U1 1
- U2 R8
- C1 1
+Net 1 "3V3" "3V3"
+ U2 R13
+ U2 E5
  U2 D7
  U2 N2
- U2 E5
- P2 1
- U2 R13
-Net 83 "1V2" "1V2"
- U2 G7
- P1 6
-Net 84 "/TDO" "TDO"
- U2 E14
+ U2 R8
+ C2 1
+ C4 1
+ C5 1
+ C6 1
+ C8 1
+ C9 1
+ C10 1
+ C11 1
+ U1 1
+ U1 4
+ C1 1
+ U3 2
+Net 2 "" ""
+ U1 3
+ U2 C10
+Net 3 "GND" "GND"
+ C10 2
+ C9 2
+ C8 2
+ U1 2
+ U4 1
+ C6 2
+ C5 2
+ C4 2
+ C11 2
+ K1 2
+ U3 1
+ U2 A1
+ C1 2
+ C2 2
+ C7 2
+ C3 2
+Net 10 "/TDO" "TDO"
  P1 4
-Net 85 "/TCK" "TCK"
+ U2 E14
+Net 11 "/TDI" "TDI"
+ U2 C12
+ P1 3
+Net 15 "/TMS" "TMS"
+ U2 A15
+ P1 1
+Net 58 "1V2" "1V2"
+ U2 G7
+ C7 1
+ C3 1
+ U4 2
+Net 59 "5V" "5V"
+ U4 3
+ U3 3
+ K1 1
+Net 61 "/TCK" "TCK"
  U2 C14
  P1 2
-Net 94 "/TMS" "TMS"
- P1 1
- U2 A15
 }
 #End
