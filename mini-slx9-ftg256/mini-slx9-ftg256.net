@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Mon 22 Oct 2012 08:04:57 PM CST
+# EESchema Netlist Version 1.1 created  Mon 22 Oct 2012 11:04:47 PM CST
 (
  ( /5077A0C7 $noname  U2 XC6SLX25-XFTG256 {Lib=XC6SLX25-XFTG256}
   (   A1 GND )
@@ -16,7 +16,7 @@
   (  A13 ? )
   (  A14 ? )
   (  A15 /TMS )
-  (  A16 ? )
+  (  A16 GND )
   (   B1 ? )
   (   B2 ? )
   (   B3 ? )
@@ -42,7 +42,7 @@
   (   C7 ? )
   (   C8 ? )
   (   C9 ? )
-  (  C10 N-000002 )
+  (  C10 N-000005 )
   (  C11 ? )
   (  C12 /TDI )
   (  C13 ? )
@@ -105,7 +105,7 @@
   (   G6 ? )
   (   G7 1V2 )
   (   G8 ? )
-  (   G9 ? )
+  (   G9 1V2 )
   (  G10 ? )
   (  G11 ? )
   (  G12 ? )
@@ -120,9 +120,9 @@
   (   H5 ? )
   (   H6 ? )
   (   H7 ? )
-  (   H8 ? )
+  (   H8 1V2 )
   (   H9 ? )
-  (  H10 ? )
+  (  H10 1V2 )
   (  H11 ? )
   (  H12 ? )
   (  H13 ? )
@@ -135,9 +135,9 @@
   (   J4 ? )
   (   J5 ? )
   (   J6 ? )
-  (   J7 ? )
+  (   J7 1V2 )
   (   J8 ? )
-  (   J9 ? )
+  (   J9 1V2 )
   (  J10 ? )
   (  J11 ? )
   (  J12 ? )
@@ -152,9 +152,9 @@
   (   K5 ? )
   (   K6 ? )
   (   K7 ? )
-  (   K8 ? )
+  (   K8 1V2 )
   (   K9 ? )
-  (  K10 ? )
+  (  K10 1V2 )
   (  K11 ? )
   (  K12 ? )
   (  K13 ? )
@@ -192,7 +192,7 @@
   (  M13 ? )
   (  M14 ? )
   (  M15 ? )
-  (  M16 ? )
+  (  M16 /LED1 )
   (   N1 ? )
   (   N2 3V3 )
   (   N3 ? )
@@ -221,7 +221,7 @@
   (  P10 ? )
   (  P11 ? )
   (  P12 ? )
-  (  P13 ? )
+  (  P13 /DONE )
   (  P14 ? )
   (  P15 ? )
   (  P16 ? )
@@ -241,7 +241,7 @@
   (  R14 ? )
   (  R15 ? )
   (  R16 ? )
-  (   T1 ? )
+  (   T1 GND )
   (   T2 ? )
   (   T3 ? )
   (   T4 ? )
@@ -256,12 +256,12 @@
   (  T13 ? )
   (  T14 ? )
   (  T15 ? )
-  (  T16 ? )
+  (  T16 GND )
  )
  ( /5077A524 $noname  U1 OSC {Lib=OSC}
   (    1 3V3 )
   (    2 GND )
-  (    3 N-000002 )
+  (    3 N-000005 )
   (    4 3V3 )
  )
  ( /5077A533 $noname  C1 0.01uf {Lib=C}
@@ -273,15 +273,15 @@
   (    2 /TCK )
   (    3 /TDI )
   (    4 /TDO )
-  (    5 ? )
-  (    6 ? )
+  (    5 /LED1 )
+  (    6 /DONE )
  )
- ( /5080AAEE $noname  U3 LDO1117-XX {Lib=LDO1117-XX}
+ ( /5080AAEE $noname  U3 LDO1117-33 {Lib=LDO1117-XX}
   (    1 GND )
   (    2 3V3 )
   (    3 5V )
  )
- ( /5080AB01 $noname  U4 LDO1117-XX {Lib=LDO1117-XX}
+ ( /5080AB01 $noname  U4 LDO1117-12 {Lib=LDO1117-XX}
   (    1 GND )
   (    2 1V2 )
   (    3 5V )
@@ -396,62 +396,78 @@ $endfootprintlist
 }
 { Pin List by Nets
 Net 1 "3V3" "3V3"
- U2 R13
  U2 E5
- U2 D7
- U2 N2
  U2 R8
+ U2 R13
+ C8 1
+ C10 1
+ C11 1
  C2 1
+ C9 1
+ U1 1
+ U2 D7
+ U3 2
+ C1 1
+ U1 4
  C4 1
  C5 1
  C6 1
- C8 1
- C9 1
- C10 1
- C11 1
- U1 1
- U1 4
- C1 1
- U3 2
-Net 2 "" ""
+ U2 N2
+Net 2 "/LED1" "LED1"
+ U2 M16
+ P1 5
+Net 3 "/TDO" "TDO"
+ U2 E14
+ P1 4
+Net 4 "/TDI" "TDI"
+ P1 3
+ U2 C12
+Net 5 "" ""
  U1 3
  U2 C10
-Net 3 "GND" "GND"
- C10 2
- C9 2
- C8 2
- U1 2
- U4 1
- C6 2
- C5 2
- C4 2
- C11 2
- K1 2
- U3 1
- U2 A1
- C1 2
- C2 2
- C7 2
- C3 2
-Net 10 "/TDO" "TDO"
- P1 4
- U2 E14
-Net 11 "/TDI" "TDI"
- U2 C12
- P1 3
-Net 15 "/TMS" "TMS"
+Net 18 "/TMS" "TMS"
  U2 A15
  P1 1
-Net 58 "1V2" "1V2"
+Net 32 "GND" "GND"
+ U2 A1
+ K1 2
+ C2 2
+ C8 2
+ U4 1
+ U1 2
+ U2 T16
+ C1 2
+ C9 2
+ C10 2
+ C11 2
+ C3 2
+ C7 2
+ U2 A16
+ C4 2
+ C5 2
+ U3 1
+ U2 T1
+ C6 2
+Net 48 "1V2" "1V2"
+ U2 J7
  U2 G7
- C7 1
- C3 1
+ U2 K10
+ U2 G9
+ U2 J9
+ U2 K8
+ U2 H8
+ U2 H10
  U4 2
-Net 59 "5V" "5V"
+ C3 1
+ C7 1
+Net 49 "/DONE" "DONE"
+ P1 6
+ U2 P13
+Net 50 "5V" "5V"
  U4 3
  U3 3
  K1 1
-Net 61 "/TCK" "TCK"
+Net 52 "/TCK" "TCK"
  U2 C14
  P1 2
 }
