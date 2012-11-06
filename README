@@ -1,4 +1,33 @@
-== Connection ==
+== Home Made ==
+=== PCB Design ==
+* fped
+* KiCAD
+
+=== Tone transfer ==
+* Laser printer (HL2140)
+* Photo paper etc
+* Paper cuter
+* Copper board, (thinkness, details)
+* Clean tools
+* Clothes iron
+* Hot water
+
+=== Ecthing ==
+* PCB etching tools, (box, heater)
+* Clean tools
+
+=== Soldering ===
+* Oven
+* SMD rework station
+* Flux
+* Solering paster
+* Chip + PCB + other components
+
+=== BGA Reballing ==
+
+
+== mini-slx9-qfp144 ==
+=== Connection ===
 For power on the xc6slx9 chip we need 4 wires: one VCCINT, one VCCAUX, one VCCO_2 and one GND.
 more connections make board more stable. connect those pins get a quiet stable board:
   VCCINT(P89)  -- 1.2v
@@ -19,7 +48,7 @@ JTAG:
   TDO -- P106
   TDI -- P110 
 
-== Components == 
+=== Components ===
   * xc6slx9 chip
   * AMS1117 1.2v
   * AMS1117 3.3v  http://www.advanced-monolithic.com/pdf/ds1117.pdf
