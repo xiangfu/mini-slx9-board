@@ -1,6 +1,6 @@
-update=Sun 28 Oct 2012 05:49:05 PM CST
+update=Wed 07 Nov 2012 03:40:55 PM CST
 version=1
-last_client=kicad
+last_client=eeschema
 [pcbnew]
 version=1
 PadDrlX=320
@@ -79,6 +79,13 @@ LibName57=xtal-2
 LibName58=xtal-4
 LibName59=smt_azonenberg
 LibDir=../../azonenberg-devboards-read-only/libs;../../kicad-libs/modules
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=../../azonenberg-devboards-read-only/libs;../../kicad-libs/components
@@ -125,10 +132,6 @@ LibName31=osc-azonenberg
 LibName32=power-azonenberg
 LibName33=xilinx-azonenberg
 LibName34=pwr
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
-[general]
-version=1
+LibName35=xc6slx9-tqg144
+LibName36=xc6slx45-2fgg484c
+LibName37=xc6slx9-csg324
