@@ -9,6 +9,10 @@ all: counter.bit blinking.bit
 
 # Build for m1
 #FPGA_TARGET ?= xc6slx45-fgg484-2
+
+# Build for mini-slx9 board tqg144/ftg256/csg324
+#FPGA_TARGET ?= xc6slx9-2-csg324
+#FPGA_TARGET ?= xc6slx9-2-ftg256
 FPGA_TARGET ?= xc6slx9-2-tqg144
 
 %.bit: %-routed.ncd
@@ -18,7 +22,8 @@ FPGA_TARGET ?= xc6slx9-2-tqg144
 # -w overwrite existing output file
 # "-g compress" enables compression
 	if test -f $<; then bitgen -b -l -w $< $@; fi
-	cp $@ $(FPGA_TARGET).$@
+	mkdir -p bits
+	cp $@ bits/$(FPGA_TARGET).$@
 
 %.ncd: %.xdl
 	-xdl -xdl2ncd $<
