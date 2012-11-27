@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 22 Nov 2012 08:37:33 PM CST
+EESchema Schematic File Version 2  date Tue 27 Nov 2012 11:17:10 PM CST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -115,13 +115,14 @@ LIBS:memory-azonenberg
 LIBS:microchip-azonenberg
 LIBS:passive-azonenberg
 LIBS:special-azonenberg
+LIBS:mini-slx9-ftg256-cache
 EELAYER 25  0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "22 nov 2012"
+Date "27 nov 2012"
 Rev ""
 Comp ""
 Comment1 ""
@@ -633,6 +634,102 @@ F 1 "TESTPOINT" H 1950 6100 60  0001 C CNN
 	1    1950 6150
 	0    -1   -1   0   
 $EndComp
+$Comp
+L W25Q80BV U5
+U 1 1 50B4D6EB
+P 2650 7450
+F 0 "U5" H 2650 7400 60  0000 C CNN
+F 1 "W25Q80BV" H 2650 7300 60  0000 C CNN
+	1    2650 7450
+	1    0    0    -1  
+$EndComp
+Text Label 1650 7050 0    60   ~ 0
+SPI_CS_N
+Text Label 1650 7150 0    60   ~ 0
+SPI_D1
+Text Label 1650 7250 0    60   ~ 0
+SPI_D2
+Text Label 3400 7150 0    60   ~ 0
+SPI_D3
+Text Label 3400 7250 0    60   ~ 0
+SPI_SCK
+Text Label 3400 7350 0    60   ~ 0
+SPI_D0
+$Comp
+L R R3
+U 1 1 50B4DEF4
+P 3000 8150
+F 0 "R3" V 3080 8150 50  0000 C CNN
+F 1 "R" V 3000 8150 50  0000 C CNN
+	1    3000 8150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R4
+U 1 1 50B4DF06
+P 3000 8750
+F 0 "R4" V 3080 8750 50  0000 C CNN
+F 1 "R" V 3000 8750 50  0000 C CNN
+	1    3000 8750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C12
+U 1 1 50B4DF0E
+P 2100 8450
+F 0 "C12" H 2150 8550 50  0000 L CNN
+F 1 "C" H 2150 8350 50  0000 L CNN
+	1    2100 8450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 3V3 #PWR021
+U 1 1 50B4E259
+P 3650 6900
+F 0 "#PWR021" H 3650 7000 40  0001 C CNN
+F 1 "3V3" H 3650 7025 40  0000 C CNN
+	1    3650 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR022
+U 1 1 50B4E268
+P 1650 7450
+F 0 "#PWR022" H 1650 7450 30  0001 C CNN
+F 1 "GND" H 1650 7380 30  0001 C CNN
+	1    1650 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 3V3 #PWR023
+U 1 1 50B4E9F8
+P 1650 8100
+F 0 "#PWR023" H 1650 8200 40  0001 C CNN
+F 1 "3V3" H 1650 8225 40  0000 C CNN
+	1    1650 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR024
+U 1 1 50B4EA07
+P 1650 8800
+F 0 "#PWR024" H 1650 8800 30  0001 C CNN
+F 1 "GND" H 1650 8730 30  0001 C CNN
+	1    1650 8800
+	1    0    0    -1  
+$EndComp
+Text Label 3350 8150 0    60   ~ 0
+SPI_SCK
+Text Label 20500 13100 0    60   ~ 0
+SPI_CS_N
+Text Label 20500 9800 0    60   ~ 0
+SPI_D1
+Text Label 20500 9900 0    60   ~ 0
+SPI_D0
+Text Label 20500 10000 0    60   ~ 0
+SPI_D2
+Text Label 20500 10100 0    60   ~ 0
+SPI_D3
 Wire Wire Line
 	18700 2250 18700 2000
 Wire Wire Line
@@ -840,4 +937,58 @@ Wire Wire Line
 Wire Wire Line
 	17550 14050 17550 14200
 Connection ~ 17550 14200
+Wire Wire Line
+	1900 7050 1650 7050
+Wire Wire Line
+	1900 7150 1650 7150
+Wire Wire Line
+	1900 7250 1650 7250
+Wire Wire Line
+	3400 7050 3650 7050
+Wire Wire Line
+	3400 7150 3650 7150
+Wire Wire Line
+	3400 7250 3650 7250
+Wire Wire Line
+	3400 7350 3650 7350
+Wire Wire Line
+	1900 7350 1650 7350
+Wire Wire Line
+	1650 7350 1650 7450
+Wire Wire Line
+	3650 7050 3650 6900
+Wire Wire Line
+	2750 8150 1650 8150
+Wire Wire Line
+	1650 8150 1650 8100
+Wire Wire Line
+	2750 8750 1650 8750
+Wire Wire Line
+	1650 8750 1650 8800
+Wire Wire Line
+	3250 8150 3500 8150
+Wire Wire Line
+	3500 8150 3500 8750
+Wire Wire Line
+	3500 8750 3250 8750
+Wire Wire Line
+	2100 8250 2100 8150
+Connection ~ 2100 8150
+Wire Wire Line
+	2100 8650 2100 8750
+Connection ~ 2100 8750
+Wire Wire Line
+	20500 13100 20750 13100
+Wire Wire Line
+	20500 9800 20900 9800
+Wire Wire Line
+	20500 9900 20900 9900
+Wire Wire Line
+	20500 10000 20900 10000
+Wire Wire Line
+	20500 10100 20900 10100
+Wire Wire Line
+	20500 9400 20900 9400
+Text Label 20500 9400 0    60   ~ 0
+SPI_SCK
 $EndSCHEMATC

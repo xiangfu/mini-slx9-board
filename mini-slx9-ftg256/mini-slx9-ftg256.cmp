@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-04-08 BZR 3494)-testing date = Thu 22 Nov 2012 07:41:12 PM CST
+Cmp-Mod V01 Created by CvPcb (2012-04-08 BZR 3494)-testing date = Tue 27 Nov 2012 11:12:27 PM CST
 
 BeginCmp
 TimeStamp = /5077A533;
@@ -78,6 +78,13 @@ IdModule  = SM0805;
 EndCmp
 
 BeginCmp
+TimeStamp = /50B4DF0E;
+Reference = C12;
+ValeurCmp = C;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
 TimeStamp = /50AE0F01;
 Reference = CON1;
 ValeurCmp = MINI_USB_B;
@@ -116,6 +123,20 @@ BeginCmp
 TimeStamp = /50A9A412;
 Reference = R2;
 ValeurCmp = 470R;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50B4DEF4;
+Reference = R3;
+ValeurCmp = R;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50B4DF06;
+Reference = R4;
+ValeurCmp = R;
 IdModule  = SM0603;
 EndCmp
 
@@ -222,6 +243,13 @@ TimeStamp = /5080AB01;
 Reference = U4;
 ValeurCmp = LDO1117-12;
 IdModule  = SOT223;
+EndCmp
+
+BeginCmp
+TimeStamp = /50B4D6EB;
+Reference = U5;
+ValeurCmp = W25Q80BV;
+IdModule  = SO8E;
 EndCmp
 
 EndListe

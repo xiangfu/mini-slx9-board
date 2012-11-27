@@ -1,8 +1,6 @@
-update=Thu 22 Nov 2012 07:42:00 PM CST
+update=Tue 27 Nov 2012 11:17:11 PM CST
 version=1
-last_client=pcbnew
-[general]
-version=1
+last_client=kicad
 [eeschema]
 version=1
 LibDir=../../azonenberg-devboards-read-only/libs;../../kicad-libs/components
@@ -218,3 +216,5 @@ LibName60=xtal-2
 LibName61=xtal-4
 LibName62=zx62-b-5pa
 LibName63=zx62m-b-5p
+[general]
+version=1
