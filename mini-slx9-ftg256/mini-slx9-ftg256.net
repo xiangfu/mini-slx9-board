@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Tue 27 Nov 2012 11:12:13 PM CST
+# EESchema Netlist Version 1.1 created  Tue 04 Dec 2012 03:23:55 PM CST
 (
  ( /5077A0C7 $noname  U2 XC6SLX25-XFTG256 {Lib=XC6SLX25-XFTG256}
   (   A1 GND )
@@ -42,7 +42,7 @@
   (   C7 ? )
   (   C8 ? )
   (   C9 ? )
-  (  C10 N-000019 )
+  (  C10 N-000017 )
   (  C11 ? )
   (  C12 /TDI )
   (  C13 ? )
@@ -104,7 +104,7 @@
   (   G5 ? )
   (   G6 ? )
   (   G7 1V2 )
-  (   G8 GND )
+  (   G8 N-000013 )
   (   G9 1V2 )
   (  G10 ? )
   (  G11 ? )
@@ -203,7 +203,7 @@
   (   N8 ? )
   (   N9 ? )
   (  N10 ? )
-  (  N11 ? )
+  (  N11 N-000041 )
   (  N12 /SPI_D2 )
   (  N13 ? )
   (  N14 ? )
@@ -251,7 +251,7 @@
   (   T8 ? )
   (   T9 ? )
   (  T10 /SPI_D0 )
-  (  T11 ? )
+  (  T11 N-000040 )
   (  T12 ? )
   (  T13 ? )
   (  T14 ? )
@@ -261,7 +261,7 @@
  ( /5077A524 $noname  U1 OSC {Lib=OSC}
   (    1 3V3 )
   (    2 GND )
-  (    3 N-000019 )
+  (    3 N-000016 )
   (    4 3V3 )
  )
  ( /5077A533 $noname  C1 0.01uf {Lib=C}
@@ -319,19 +319,19 @@
   (    2 GND )
  )
  ( /50A9A412 $noname  R2 470R {Lib=R}
-  (    1 N-000022 )
+  (    1 N-000019 )
   (    2 /LED1 )
  )
  ( /50A9A4D8 $noname  D2 LED {Lib=LED}
-  (    1 N-000022 )
+  (    1 N-000019 )
   (    2 GND )
  )
  ( /50A9A65E $noname  R1 470R {Lib=R}
-  (    1 N-000023 )
+  (    1 N-000021 )
   (    2 /DONE )
  )
  ( /50A9A664 $noname  D1 LED {Lib=LED}
-  (    1 N-000023 )
+  (    1 N-000021 )
   (    2 GND )
  )
  ( /50A9A680 $noname  P1 CONN_5 {Lib=CONN_5}
@@ -366,16 +366,16 @@
   (    1 /GND_1 )
  )
  ( /50A9C387 $noname  TP1 TESTPOINT {Lib=TESTPOINT}
-  (    1 N-000001 )
+  (    1 N-000022 )
  )
  ( /50A9C394 $noname  TP2 TESTPOINT {Lib=TESTPOINT}
-  (    1 N-000002 )
+  (    1 N-000023 )
  )
  ( /50AE0F01 $noname  CON1 MINI_USB_B {Lib=MINI_USB_B}
   (    1 5V )
-  (    2 N-000001 )
-  (    3 N-000002 )
-  (    4 N-000003 )
+  (    2 N-000022 )
+  (    3 N-000023 )
+  (    4 N-000015 )
   (    5 GND )
   (    6 ? )
   (    7 ? )
@@ -383,7 +383,7 @@
   (    9 ? )
  )
  ( /50AE10EB $noname  TP11 TESTPOINT {Lib=TESTPOINT}
-  (    1 N-000003 )
+  (    1 N-000015 )
  )
  ( /50B4D6EB $noname  U5 W25Q80BV {Lib=W25Q80BV}
   (    1 /SPI_CS_N )
@@ -395,17 +395,42 @@
   (    7 /SPI_D3 )
   (    8 3V3 )
  )
- ( /50B4DEF4 $noname  R3 R {Lib=R}
+ ( /50B4DEF4 $noname  R3 100 {Lib=R}
   (    1 3V3 )
   (    2 /SPI_SCK )
  )
- ( /50B4DF06 $noname  R4 R {Lib=R}
+ ( /50B4DF06 $noname  R4 100 {Lib=R}
   (    1 GND )
   (    2 /SPI_SCK )
  )
- ( /50B4DF0E $noname  C12 C {Lib=C}
+ ( /50B4DF0E $noname  C12 0.1uF {Lib=C}
   (    1 3V3 )
   (    2 GND )
+ )
+ ( /50BC4D93 $noname  TP12 TESTPOINT {Lib=TESTPOINT}
+  (    1 N-000013 )
+ )
+ ( /50BC584B $noname  C13 0.01uF {Lib=C}
+  (    1 5V )
+  (    2 GND )
+ )
+ ( /50BC585A $noname  C14 0.1uF {Lib=C}
+  (    1 5V )
+  (    2 GND )
+ )
+ ( /50BC5869 $noname  C15 4.7uF {Lib=C}
+  (    1 5V )
+  (    2 GND )
+ )
+ ( /50BDA45F $noname  R5 49.9 {Lib=R}
+  (    1 N-000016 )
+  (    2 N-000017 )
+ )
+ ( /50BDAA45 $noname  TP13 TESTPOINT {Lib=TESTPOINT}
+  (    1 N-000040 )
+ )
+ ( /50BDAA52 $noname  TP14 TESTPOINT {Lib=TESTPOINT}
+  (    1 N-000041 )
  )
 )
 *
@@ -515,157 +540,195 @@ $component C12
  C?
  C1-1
 $endlist
+$component C13
+ SM*
+ C?
+ C1-1
+$endlist
+$component C14
+ SM*
+ C?
+ C1-1
+$endlist
+$component C15
+ SM*
+ C?
+ C1-1
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
 $endfootprintlist
 }
 { Pin List by Nets
-Net 1 "" ""
- CON1 2
- TP1 1
-Net 2 "" ""
- TP2 1
- CON1 3
-Net 3 "" ""
- TP11 1
- CON1 4
-Net 4 "GND" "GND"
- C4 2
- C5 2
- C6 2
- U2 T1
- U1 2
- C2 2
- C8 2
- U2 A1
- C9 2
- D2 2
- U2 T16
- C10 2
- C11 2
- C3 2
- C7 2
- D1 2
- C12 2
- C1 2
- U2 G8
- U3 1
- U2 A16
- R4 1
- U5 4
- U4 1
- CON1 5
-Net 9 "5V" "5V"
- U3 3
- CON1 1
- U4 3
-Net 10 "/TMS" "TMS"
- P1 2
- U2 A15
-Net 11 "/TDO" "TDO"
- P1 4
- U2 E14
-Net 12 "/TDI" "TDI"
- P1 1
- U2 C12
-Net 13 "/SPI_CS_N" "SPI_CS_N"
+Net 1 "/SPI_CS_N" "SPI_CS_N"
  U2 T3
  U5 1
-Net 15 "/SPI_D1" "SPI_D1"
+Net 2 "/SPI_D1" "SPI_D1"
  U2 P10
  U5 2
-Net 16 "/SPI_D0" "SPI_D0"
+Net 3 "GND" "GND"
+ C5 2
+ D2 2
+ C11 2
+ C6 2
+ C1 2
+ U2 T16
+ D1 2
+ U2 T1
+ C10 2
+ C15 2
+ C9 2
+ U3 1
+ U4 1
+ C7 2
+ U2 A16
+ U1 2
+ C3 2
+ C2 2
+ C14 2
+ CON1 5
+ U5 4
+ C8 2
+ C12 2
+ R4 1
+ U2 A1
+ C4 2
+ C13 2
+Net 8 "/SPI_D0" "SPI_D0"
  U2 T10
  U5 5
-Net 17 "/SPI_D2" "SPI_D2"
- U2 N12
- U5 3
-Net 18 "/SPI_D3" "SPI_D3"
- U5 7
- U2 P12
-Net 19 "" ""
- U1 3
- U2 C10
-Net 20 "/SPI_SCK" "SPI_SCK"
- U5 6
+Net 9 "/SPI_SCK" "SPI_SCK"
+ R3 2
  R4 2
  U2 R11
- R3 2
-Net 21 "3V3" "3V3"
- C1 1
- U2 D7
- U2 N2
- U2 R4
- C9 1
- C8 1
- U1 4
- U2 E5
- U3 2
- U2 B4
- C10 1
- U1 1
- C6 1
- C5 1
- C4 1
- C2 1
- U2 R13
+ U5 6
+Net 10 "/SPI_D3" "SPI_D3"
+ U2 P12
+ U5 7
+Net 11 "3V3" "3V3"
  C11 1
- C12 1
- R3 1
- U2 R8
- U5 8
+ C10 1
+ C2 1
+ C4 1
+ C5 1
+ C6 1
+ U1 4
  U2 D2
-Net 22 "" ""
- D2 1
+ U2 R4
+ U2 E5
+ U2 B4
+ U2 N2
+ U2 D7
+ U2 R13
+ R3 1
+ C12 1
+ U5 8
+ U2 R8
+ U1 1
+ U3 2
+ C1 1
+ C8 1
+ C9 1
+Net 12 "/SPI_D2" "SPI_D2"
+ U2 N12
+ U5 3
+Net 13 "" ""
+ U2 G8
+ TP12 1
+Net 14 "5V" "5V"
+ CON1 1
+ U4 3
+ C15 1
+ U3 3
+ C13 1
+ C14 1
+Net 15 "" ""
+ CON1 4
+ TP11 1
+Net 16 "" ""
+ R5 1
+ U1 3
+Net 17 "" ""
+ U2 C10
+ R5 2
+Net 18 "/LED1" "LED1"
+ U2 M16
+ R2 2
+Net 19 "" ""
  R2 1
-Net 23 "" ""
+ D2 1
+Net 20 "/DONE" "DONE"
+ U2 P13
+ R1 2
+Net 21 "" ""
  R1 1
  D1 1
-Net 24 "/GND_0" "GND_0"
- U2 G15
- TP5 1
-Net 25 "/V3_0" "V3_0"
- TP10 1
- U2 J2
-Net 26 "/GND_2" "GND_2"
- U2 L15
- TP8 1
-Net 27 "/GND_3" "GND_3"
- TP9 1
- U2 L2
-Net 28 "/GND_1" "GND_1"
- U2 G2
- TP6 1
-Net 29 "/Alt" "Alt"
- U2 F16
- P1 5
-Net 32 "/DONE" "DONE"
- R1 2
- U2 P13
-Net 33 "/LED1" "LED1"
- R2 2
- U2 M16
-Net 34 "/TCK" "TCK"
- P1 3
+Net 22 "" ""
+ TP1 1
+ CON1 2
+Net 23 "" ""
+ CON1 3
+ TP2 1
+Net 24 "/TMS" "TMS"
+ U2 A15
+ P1 2
+Net 25 "/TDO" "TDO"
+ P1 4
+ U2 E14
+Net 26 "/TDI" "TDI"
+ P1 1
+ U2 C12
+Net 27 "/TCK" "TCK"
  U2 C14
-Net 35 "/V0" "V0"
- U2 B9
+ P1 3
+Net 28 "/V0" "V0"
  TP3 1
-Net 36 "/V1_0" "V1_0"
- U2 D15
+ U2 B9
+Net 29 "/V1_0" "V1_0"
  TP4 1
-Net 37 "/V1_1" "V1_1"
+ U2 D15
+Net 30 "/V1_1" "V1_1"
  U2 J15
  TP7 1
-Net 220 "1V2" "1V2"
- U2 H10
- U2 K10
+Net 32 "/GND_3" "GND_3"
+ TP9 1
+ U2 L2
+Net 33 "/V3_0" "V3_0"
+ TP10 1
+ U2 J2
+Net 34 "/GND_0" "GND_0"
+ U2 G15
+ TP5 1
+Net 35 "/GND_2" "GND_2"
+ U2 L15
+ TP8 1
+Net 36 "/GND_1" "GND_1"
+ U2 G2
+ TP6 1
+Net 37 "/Alt" "Alt"
+ U2 F16
+ P1 5
+Net 40 "" ""
+ U2 T11
+ TP13 1
+Net 41 "" ""
+ TP14 1
+ U2 N11
+Net 212 "1V2" "1V2"
  C3 1
- C7 1
- U2 J7
  U2 G9
  U2 J9
- U2 H8
  U2 K8
- U4 2
+ U2 H8
+ U2 K10
+ U2 H10
+ U2 J7
+ C7 1
  U2 G7
+ U4 2
 }
 #End

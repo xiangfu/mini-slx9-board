@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-04-08 BZR 3494)-testing date = Tue 27 Nov 2012 11:12:27 PM CST
+Cmp-Mod V01 Created by CvPcb (2012-04-08 BZR 3494)-testing date = Tue 04 Dec 2012 03:24:05 PM CST
 
 BeginCmp
 TimeStamp = /5077A533;
@@ -80,7 +80,28 @@ EndCmp
 BeginCmp
 TimeStamp = /50B4DF0E;
 Reference = C12;
-ValeurCmp = C;
+ValeurCmp = 0.1uF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /50BC584B;
+Reference = C13;
+ValeurCmp = 0.01uF;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50BC585A;
+Reference = C14;
+ValeurCmp = 0.1uF;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50BC5869;
+Reference = C15;
+ValeurCmp = 4.7uF;
 IdModule  = SM0805;
 EndCmp
 
@@ -129,15 +150,22 @@ EndCmp
 BeginCmp
 TimeStamp = /50B4DEF4;
 Reference = R3;
-ValeurCmp = R;
+ValeurCmp = 100;
 IdModule  = SM0603;
 EndCmp
 
 BeginCmp
 TimeStamp = /50B4DF06;
 Reference = R4;
-ValeurCmp = R;
+ValeurCmp = 100;
 IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50BDA45F;
+Reference = R5;
+ValeurCmp = 49.9;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
@@ -213,6 +241,27 @@ EndCmp
 BeginCmp
 TimeStamp = /50AE10EB;
 Reference = TP11;
+ValeurCmp = TESTPOINT;
+IdModule  = PROBEPAD;
+EndCmp
+
+BeginCmp
+TimeStamp = /50BC4D93;
+Reference = TP12;
+ValeurCmp = TESTPOINT;
+IdModule  = PROBEPAD;
+EndCmp
+
+BeginCmp
+TimeStamp = /50BDAA45;
+Reference = TP13;
+ValeurCmp = TESTPOINT;
+IdModule  = PROBEPAD;
+EndCmp
+
+BeginCmp
+TimeStamp = /50BDAA52;
+Reference = TP14;
 ValeurCmp = TESTPOINT;
 IdModule  = PROBEPAD;
 EndCmp

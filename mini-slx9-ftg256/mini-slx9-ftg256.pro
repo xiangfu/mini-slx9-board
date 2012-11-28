@@ -1,4 +1,4 @@
-update=Tue 27 Nov 2012 11:17:11 PM CST
+update=Tue 04 Dec 2012 03:25:26 PM CST
 version=1
 last_client=kicad
 [eeschema]
