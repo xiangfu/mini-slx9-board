@@ -54,6 +54,10 @@ FPGA_TARGET ?= xc6slx9-2-tqg144
 	for i in `echo $^`; do \
 	    echo "verilog $(basename $<) $$i" >> $@; \
 	done
+	if [ "$^" == "blinking.v" ]; then \
+	    echo "verilog async_receiver async_receiver.v" >> $@; \
+	    echo "verilog async_transmitter async_transmitter.v" >> $@; \
+	fi
 
 load: counter.bit
 	echo "cable milkymist" > load.jtag

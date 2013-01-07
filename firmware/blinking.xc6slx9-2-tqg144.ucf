@@ -1,3 +1,6 @@
 NET "clk" LOC = P55 | IOSTANDARD = LVCMOS33;
 NET "clk" TNM_NET = "clk";
 NET "led" LOC = P74 | SLEW = QUIETIO | DRIVE = 8;
+NET "led1" LOC = P75 | SLEW = QUIETIO | DRIVE = 8;
+NET "RxD" LOC = P104;
+NET "TxD" LOC = P105;
