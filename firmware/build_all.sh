@@ -10,4 +10,6 @@ FPGA_TARGET=xc6slx9-2-csg324 make && \
 touch *.v && \
 FPGA_TARGET=xc6slx9-2-ftg256 make && \
 touch *.v && \
-FPGA_TARGET=xc6slx9-2-tqg144 make
+FPGA_TARGET=xc6slx9-2-tqg144 make && \
+touch *.v && \
+FPGA_TARGET=xc6slx16-2-ftg256 make blinking.bit
