@@ -1,0 +1,3 @@
+NET "clk" LOC = K12 | IOSTANDARD = LVCMOS33;
+NET "clk" TNM_NET = "clk";
+NET "led" LOC = J11 | SLEW = QUIETIO | DRIVE = 8;
